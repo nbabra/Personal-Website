@@ -87,6 +87,7 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  z-index: 999;
 
 }
 
@@ -94,9 +95,11 @@ p.lead {
   outline-color: #182C61;
 }
 
-#container {
-  overflow: hidden;
+#wrapper {
   position: relative;
+}
+#wrapper * > {
+  position: absolute;
 }
 
 @media (min-width: 992px) {
@@ -115,6 +118,7 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    z-index: 999;
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -122,11 +126,13 @@ p.lead {
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
+    z-index: 999;
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    z-index: 999;
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -140,6 +146,7 @@ p.lead {
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
+    z-index: 999;
   }
   #sideNav .navbar-collapse .navbar-nav {
     -webkit-box-orient: vertical;
@@ -147,12 +154,13 @@ p.lead {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
+    z-index: 999;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
+    display: inline-block;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
+    display: inline-block;
   }
 }
 
