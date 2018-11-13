@@ -84,6 +84,21 @@ p.lead {
   background-color: #182C61;
 }
 
+.img_wrap {
+  position: relative !important;
+}
+
+.img_description {
+  visibility: hidden !important;
+  position: absolute !important; 
+  opacity: 0;
+}
+
+.img_description:hover {
+  visibility: visible !important;
+  opacity: 1;
+}
+
 .dev-icons {
   font-size: 3rem;
 }
